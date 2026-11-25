@@ -1,5 +1,5 @@
-export async function  ProuctsPage() {
-  return(
-    <p>This is Product Page</p>
-  )
+import { Products } from "@/components/Products";
+
+export default function  ProuctsPage() {
+ return <Products/>
 }

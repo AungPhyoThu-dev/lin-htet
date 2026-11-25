@@ -7,8 +7,8 @@ export default function HeaderButton(){
     <div  className="sm:p-1 p-1 rounded-full border border-gray-200 hover:bg-orange-50 hover:text-orange-600 transition">
   <Button variant="ghost"
           size="icon"
-          className="rounded-full w-7 h-7 sm:w-11 sm:h-11">
-      <UserRound className="w-4 h-4 sm:w-6 sm:h-6" />
+          className="rounded-full w-7 h-7 sm:w-11 sm:h-11 ">
+      <UserRound className="w-4 h-4 sm:w-6 sm:h-6 lg:w-11 lg:h-11" />
     </Button>
     
     </div>
