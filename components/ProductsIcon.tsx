@@ -19,24 +19,23 @@ export default function ProductsIcons(){
   { id: 6, name: "Game", url: "/shop/products", icon: Gamepad2, color: "text-blue-500",bg:"bg-yellow-400" }
   ]
   return(
-    <div className="flex flex-row justify-center w-full items-center">
+    <div className="flex flex-row justify-center w-full items-center ">
       <aside className="   
-  backdrop-blur-lg
- 
-  
-   p-2 bg-white/30 w-full sm:w-[800px]">
-       <nav className="flex items-center  justify-around gap-3">
-        <div className="p-2 flex justify-around w-full text-center">
+ w-full sm:max-w-[850px] rounded-2xl border border-gray-100 bg-white/80 shadow-sm p-3 sm:p-5">
+       <nav className="flex items-center  gap-3">
+       
+        <div className="p-2 flex justify-between sm:justify-around w-full text-center gap-1.5 sm:gap-2">
+          
           {navItems.map((item)=>{
             const Icon=item.icon;
             return(
               <div key={item.id}  >
-      <Link  href={item.url}  className="flex flex-col items-center justify-center ">
+      <Link  href={item.url}  className="flex flex-col items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-1">
       <div className={`p-3  gap-3 sm:gap-1 rounded-full ${item.bg}`}>
   <Icon className={`${item.color} size-4 sm:size-8` }/>
 </div>
 
-<span className="hidden sm:flex">{item.name}</span>
+<span className="text-[10px] sm:text-sm font-medium text-gray-700">{item.name}</span>
 </Link>
 </div>
             )
